@@ -1,13 +1,14 @@
 import json
 import asyncio
+import os
 from datetime import datetime, timedelta
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # ==== ВСТАВЬ СВОИ ДАННЫЕ ====
-TOKEN = "8338194024:AAH0dOCfmysiFsB6dLxzNOnX3qdZcmpbLZM"
-MY_ID = 1061852930
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+MY_ID = int(os.genetv("MY_ID"))
 # ============================
 
 bot = Bot(token=TOKEN)
