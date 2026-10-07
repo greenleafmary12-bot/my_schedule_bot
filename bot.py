@@ -8,7 +8,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # ==== ВСТАВЬ СВОИ ДАННЫЕ ====
 TOKEN = os.getenv("TELEGRAM_TOKEN")
-MY_ID = int(os.genetv("MY_ID"))
+MY_ID = int(os.getenv("MY_ID"))
 # ============================
 
 bot = Bot(token=TOKEN)
